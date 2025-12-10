@@ -1,0 +1,14 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+/* Custom shadow that's visible on all sides */
+.shadow-all {
+    box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s ease;
+
+    &:hover {
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);
+    }
+}

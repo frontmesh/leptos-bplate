@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+@layer components {
+    .prose-blog {
+        @apply max-w-none;
+    }
+
+    .prose-blog h1 {
+        @apply text-3xl font-bold mt-6 mb-3 text-gray-950;
+    }
+
+    .prose-blog h2 {
+        @apply text-2xl font-bold mt-6 mb-3 text-gray-950 pb-2;
+    }
+
+    .prose-blog h3 {
+        @apply text-xl font-bold mt-4 mb-2 text-gray-900;
+    }
+
+    .prose-blog h4 {
+        @apply text-lg font-bold mt-4 mb-2 text-gray-900;
+    }
+
+    .prose-blog h5 {
+        @apply font-bold mt-3 mb-2 text-gray-900;
+    }
+
+    .prose-blog h6 {
+        @apply font-bold mt-3 mb-2 text-gray-900;
+    }
+
+    .prose-blog p {
+        @apply text-base leading-7 mb-4 text-gray-800 text-justify;
+    }
+
+    .prose-blog a {
+        @apply text-blue-600 hover:text-blue-800 underline transition;
+    }
+
+    .prose-blog strong {
+        @apply font-bold text-gray-950;
+    }
+
+    .prose-blog em {
+        @apply italic text-gray-800;
+    }
+
+    .prose-blog code {
+        @apply bg-yellow-100 text-gray-900 px-2 py-1 rounded font-mono text-sm font-semibold text-left;
+    }
+
+    .prose-blog pre {
+        @apply bg-gray-900 text-gray-100 p-4 rounded-lg overflow-x-auto mb-4 font-mono text-sm text-left;
+    }
+
+    .prose-blog pre code {
+        @apply bg-transparent text-yellow-300 p-0 font-semibold;
+    }
+
+    .prose-blog blockquote {
+        @apply border-l-4 border-blue-500 pl-4 italic text-gray-700 my-4 py-2;
+    }
+
+    .prose-blog ul {
+        @apply list-none pl-0 mb-4;
+    }
+
+    .prose-blog ol {
+        @apply list-none pl-0 mb-4;
+    }
+
+    .prose-blog li {
+        @apply mb-2 text-gray-800 text-justify;
+    }
+
+    .prose-blog img {
+        @apply max-w-full h-auto rounded-lg my-6;
+    }
+
+    .prose-blog table {
+        @apply w-full border-collapse border border-gray-300 mb-4;
+    }
+
+    .prose-blog thead {
+        @apply bg-gray-200;
+    }
+
+    .prose-blog th {
+        @apply border border-gray-300 px-4 py-2 text-left font-bold text-gray-900;
+    }
+
+    .prose-blog td {
+        @apply border border-gray-300 px-4 py-2 text-gray-800;
+    }
+
+    .prose-blog hr {
+        @apply my-6 border-gray-300;
+    }
+
+    .prose-blog > * + * {
+        @apply mt-4;
+    }
+}
